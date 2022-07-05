@@ -7,23 +7,24 @@ import cv2
 st.set_page_config("Color Palette Finder", "Assets/site logo.png")
 st.header(
     """
-    Color Palette Extractor using Clustering...
+    Color Palette Extractor
     """
 )
 
 st.text(
     """
-    Libraries Used: Collections, Sklearn, Matplotlib, Numpy, Open-CV, Pillow, Webcolors, Scipy
-    Made By: Priyanshu N Bairwa
+    Classify the most dominant colors from the image and get a nicely represented pie
+    chart of each color's dominance along with either its name or hexadecimal values.
     """
 )
+st.write("Created By: Priyanshu N Bairwa ([_Github_](https://github.com/BeholdenArt))")
 
 st.sidebar.title("Enter Your Attributes Here...")
 
 
 
 uploaded_file = addons.uploading_image()
-k_value = st.sidebar.slider("Enter number of clusters", min_value=5, max_value= 50, value= 25, step= 5)
+k_value = st.sidebar.slider("Palette Size", min_value=5, max_value= 50, value= 25, step= 5)
 value_choice = st.sidebar.radio("Type of represent the colors", ["Hex Values", "Color Name"])
 button = st.sidebar.button("Find Color Palette", False)
 
