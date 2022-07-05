@@ -1,0 +1,9 @@
+matplotlib
+webcolors
+scipy
+numpy
+Pillow
+streamlit
+opencv-python
+scikit-learn
+sklearn
