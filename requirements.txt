@@ -4,7 +4,6 @@ scipy
 numpy
 Pillow
 streamlit
-opencv-python
+opencv-python-headless
 scikit-learn
 sklearn
-ffmpeg-python
