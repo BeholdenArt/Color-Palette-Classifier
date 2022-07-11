@@ -1,5 +1,3 @@
-from configparser import Interpolation
-from turtle import color
 import streamlit as st 
 from collections import Counter 
 from sklearn.cluster import KMeans
